@@ -1,0 +1,43 @@
+
+@font-face {
+  font-family:'spoqaBold';
+  src:url('../resource/font/Spoqa/SpoqaHanSansNeo_OTF_subset/SpoqaHanSansNeo-Bold.woff') format('woff'),
+      url('../resource/font/Spoqa/SpoqaHanSansNeo_OTF_subset/SpoqaHanSansNeo-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:'spoqaLight';
+  src:url('../resource/font/Spoqa/SpoqaHanSansNeo_OTF_subset/SpoqaHanSansNeo-Light.woff') format('woff'),
+      url('../resource/font/Spoqa/SpoqaHanSansNeo_OTF_subset/SpoqaHanSansNeo-Light.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'spoqaMideum';
+  src:url('../resource/font/Spoqa/SpoqaHanSansNeo_OTF_subset/SpoqaHanSansNeo-Medium.woff') format('woff'),
+      url('../resource/font/Spoqa/SpoqaHanSansNeo_OTF_subset/SpoqaHanSansNeo-Medium.woff2') format('woff2');
+  ;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:'spoqaRegular';
+  src:url('../resource/font/Spoqa/SpoqaHanSansNeo_OTF_subset/SpoqaHanSansNeo-Regular.woff') format('woff'),
+      url('../resource/font/Spoqa/SpoqaHanSansNeo_OTF_subset/SpoqaHanSansNeo-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'spoqaThin';
+  src:url('../resource/font/Spoqa/SpoqaHanSansNeo_OTF_subset/SpoqaHanSansNeo-Thin.woff') format('woff'),
+      url('../resource/font/Spoqa/SpoqaHanSansNeo_OTF_subset/SpoqaHanSansNeo-Thin.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body { font-family:'spoqaBold'; }
