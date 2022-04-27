@@ -1,26 +1,49 @@
 $(document).ready(function () {
   $("body").css({ padding: "0", margin: "0" /* 화면 꽉차게*/ });
-  $('button').css({ 'border' : 'none'});
+  $("button").css({ "border": "none",
+    "padding": "10px"
+  });
 
   // $(".wrap").css({ "background-color": "#f00", "text-align": "center" });
+  $(".header").css({"text-align" : "center"});
 
-  $(".calender").css({
-    "background-color": "pink",
+  $(".main").css({
+    "background-color": "#fff",
     "text-align": "center",
-    "display" : "flex",
+    "display": "flex",
     "flex-direction": "column",
   });
 
-  $(".daies").css({ "display": "flex", "flex-wrap": "wrap", "width": "100%", "justify-content": "space-around" });
-
-  $(".dates").css({
-    "background-color": "yellow",
-    "flex-wrap" : 'wrap',
-    "width": "100%",
+  $(".week").css({
     "display": "flex",
-    "border" : "1px solid red",
+    "flex-wrap": "wrap",
+    "width": "100%",
+    "justify-content": "space-around",
   });
 
-  // $(".dates", "day").css({"text-align": "center", "width": "(100%/7)",});
+  $(".dates").css({
+    "display": "flex",
+    "flex-wrap": "wrap",
+    "width": "100%",
+  });
 
+  $(".date, .day").css({
+    "text-align": "center",
+    "width": "calc(100%/7)",
+    "height": "100px",
+    "padding": "16px 0 16px 0",
+    "box-sizing": "border-box",
+    "border" : "2px solid #e0e0e0",
+    
+  });
+  
+  $(".date:nth-child(7n), .day:nth-child(7n)").css({
+    "color": "blue",
+  });
+
+  $(".date:nth-child(7n+1), .day:nth-child(7n+1)").css({
+    "color": "#f00",
+  });
+
+  $(".today").css({ boder: "2px solid" });
 });

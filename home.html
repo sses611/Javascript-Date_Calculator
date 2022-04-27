@@ -1,25 +1,28 @@
   <!DOCTYPE html>
   <html lang="ko">
+
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/default.css"/>
+    <link rel="stylesheet" href="css/default.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!--jOuery CDN 연결-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--jOuery CDN 연결-->
 
   </head>
+
   <body>
     <div name="wrap" class="wrap">
-      <div  class="calender area" id="calenber area">
-        <div class="calender area title" id="calenber area title">
+      <div class="calender area" id="calenber area">
+        <div class="header" id="header">
           <h2>
-            <button class="preMonth" id="preMonth">
+            <button class="preMonth" id="preMonth" onclick="preMonth();">
               <span class="material-icons">arrow_back_ios</span>
-            </button>
-            <span id="today"></span>
+            </button>&nbsp&nbsp
+            <span id="today"></span>&nbsp&nbsp
             <button class="nextMonth" onclick="nextMonth();">
               <span class="material-icons">arrow_forward_ios</span>
             </button>
@@ -27,23 +30,26 @@
         </div>
 
         <div class="calender">
-          <div class ="daies">
-            <div class="day">SUNDAY</div>
-            <div class="day">MONDAY</div>
-            <div class="day">TUESDAY</div>
-            <div class="day">WENDESDAY</div>
-            <div class="day">THURDAY</div>
-            <div class="day">FRIDAY</div>
-            <div class="day">SATURDAY</div>
+          <div class="main">
+            <div class="week">
+              <div class="day">SUNDAY</div>
+              <div class="day">MONDAY</div>
+              <div class="day">TUESDAY</div>
+              <div class="day">WENDESDAY</div>
+              <div class="day">THURDAY</div>
+              <div class="day">FRIDAY</div>
+              <div class="day">SATURDAY</div>
+            </div>
+
+            <div class="dates"></div>
           </div>
-          
-          <div clas="dates"></div>
-      </div>
+        </div>
 
       </div>
-      
+
     </div>
     <script src="js/css.js"></script>
     <script src="js/basic.js"></script>
   </body>
+
   </html>
