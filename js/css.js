@@ -36,6 +36,10 @@ $(document).ready(function () {
     "border" : "2px solid #e0e0e0",
     
   });
+
+  $(".date").hover(function(){
+    $(this).css({"background-color" : "#e0e0e0"});
+  });
   
   $(".date:nth-child(7n), .day:nth-child(7n)").css({
     "color": "blue",
