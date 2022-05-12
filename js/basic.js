@@ -8,7 +8,7 @@ $(document).ready(function () {
 
   $("#datepicker2").change(function () {
     datePick = new Date($("#datepicker2").val());
-    alert(datePick);
+    // alert(datePick);
 
     $("button").click(function () {
       let cal = datePick - today;
