@@ -1,68 +1,84 @@
-* {
-  box-sizing: border-box;
-}
+  * {
+    box-sizing: border-box;
+  }
 
-label, button, span{
-  font-size: 30px;
-  font-weight: bold;
-}
+  label, button, span{
+    font-size: 30px;
+    font-weight: bold;
+  }
 
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
 
-.inner{
-  background-color : #ffe375;
-  width: 100;
-  min-width: 720px;
-  max-width: 1260px;;
-}
+  .content h2{
+    font-size: 100px;
+  }
 
-.datepicker2{
-  width: 100%;
-  height: 100%;
-}
+  .inner{
+    display: flex;
+    background-color : #ffe375;
+    /* width: 100; */
+    min-width: 720px;
+    max-width: 1260px;;
+  }
 
-button{
-  width : 200px;
-  font-weight: 20px;
-}
+  .datepicker2{
+    width: 100%;
+    height: 100%;
+  }
 
-.daySelect, .dayInput, button{
-  margin-bottom: 15px;
-}
-
-/* Style the side navigation */
-.sidenav {
-  height: 100%;
-  width: 200px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-}
+  button{
+    width : 200px;
+    height: auto;
+    font-weight: 20px;
+  }
 
 
-/* Side navigation links */
-.sidenav a {
-  color: white;
-  padding: 16px;
-  text-decoration: none;
-  display: block;
-}
 
-/* Change color on hover */
-.sidenav a:hover {
-  background-color: #ddd;
-  color: black;
-}
+  /* Style the side navigation */
+  .sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+  }
 
-/* Style the content */
-.content {
-  margin-left: 200px;
-  padding-left: 20px;
-}
+
+  /* Side navigation links */
+  .sidenav a {
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  /* Change color on hover */
+  .sidenav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* Style the content */
+  .content {
+    margin-left: 200px;
+    padding-left: 20px;
+  }
+
+  .Dday{
+    width: 100%;
+    height: 100%;
+    main-content: grid;
+  }
+  .result{
+    width: 100%;
+    background-color: rgb(77, 86, 251);
+    color : #fff;
+    padding: 20px;
+  }
 

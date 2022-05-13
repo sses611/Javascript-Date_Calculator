@@ -1,0 +1,58 @@
+  <!DOCTYPE html>
+  <html lang="ko">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--jOuery CDN 연결-->
+    <script src="./js/basic.js"></script>
+
+    <title>날짜 계산기 </title>
+  </head>
+
+  <body>
+      <div class="sidenav">
+        <a href="#">D-DAY 계산기</a>
+        <!-- <a href="#">Working Days</a>
+        <a href="#">relationship Days</a> -->
+      </div>
+
+      <div class="content">
+        <h2>D - Day</h2>
+        <p>중요한 날짜까지 며칠 남았는지? </p>
+
+        <div class="inner">
+          <div class="Dday">
+            <div class="daySelect">
+              <label for="today">오늘 날짜 </label><span id="today"></span>
+            </div><br/>
+            
+            <div class="dayInput">
+              <label for="datepicker2">기준 날짜 </label>
+              <input type="date" id="datepicker2" placeholder="2022-01-01" maxlength="10">
+            </div>
+          </div>
+            <!-- <input type="radio" name="todaySelect" selected/> 오늘 -->
+            <!-- <input type="radio" name="todaySelect"/> 날짜선택 <br/> -->
+            <!--               
+            <label for ="datepicker1">날짜 선택 </label> 
+            <input type="date" id="datepicker1"> -->
+
+            <button>계산</button>
+
+            <div class="result">
+              <span>남은 날짜 </span><br>
+              <span class="dDay"></span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </body>
+    </html>

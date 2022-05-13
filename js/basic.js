@@ -18,12 +18,12 @@ $(document).ready(function () {
 
       if (cal > 0) {
         cal = cal + 1;
-        $(".dDay").eq(0).text(cal);
+        $(".dDay").eq(0).text(cal+"일");
       } else if (cal < 0) {
         alert(cal);
-        $(".dDay").eq(0).text(cal);
+        $(".dDay").eq(0).text(cal+"일");
       } else {
-        $(".dDay").eq(0).text(0);
+        $(".dDay").eq(0).text(0+"일");
       }
     });
   });
