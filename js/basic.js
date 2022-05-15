@@ -2,8 +2,8 @@
     const today = new Date();
     let datePick = "";
 
-    let now =
-      today.getFullYear() + "-" + (today.getMonth() + 1) + "-" + today.getDate();
+    let now = today.getFullYear() + "-" + (today.getMonth() + 1) + "-" + today.getDate();
+    console.log(now);
     $("#today").eq(0).text(now);
 
     $("#datepicker2").change(function () {
@@ -12,9 +12,9 @@
 
         let cal = datePick - today;
 
-        cal = parseInt(cal / 1000 / 60 / 60 / 24);
+        year = parseInt(cal / 1000 / 60 / 60 / 24);
         // cal = Math.abs(cal); // 양수로 변환
-
+      
         if (cal > 0) {
           cal = cal + 1;
           $(".dDay").eq(0).text('D - ' + cal);
