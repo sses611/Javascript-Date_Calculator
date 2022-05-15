@@ -12,9 +12,9 @@
 
         let cal = datePick - today;
 
-        year = parseInt(cal / 1000 / 60 / 60 / 24);
+        cal = parseInt(cal / 1000 / 60 / 60 / 24);
         // cal = Math.abs(cal); // 양수로 변환
-      
+
         if (cal > 0) {
           cal = cal + 1;
           $(".dDay").eq(0).text('D - ' + cal);
