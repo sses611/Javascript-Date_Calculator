@@ -8,10 +8,11 @@
 
   <link rel="stylesheet" href="css/default.css" />
   <link rel="stylesheet" href="css/custom.css" />
+  <link rel="stylesheet" href="css/mobile.css" />
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <!--jOuery CDN 연결-->
-  <script src="./js/basic.js"></script>
+  <script src="./js/DDAY.js"></script>
 
   <title>날짜 계산기 </title>
 </head>
@@ -22,7 +23,7 @@
     <a href="DDay.html">D-DAY</a>
     <a href="work.html">WORK</a>
   </div>
-  
+
   <div class="sidenav-mobile">
     <a href="index.html">HOME</a>
     <a href="DDay.html">D-DAY</a>
@@ -31,17 +32,15 @@
 
   <div class="wrap">
     <div class="header">
-      <p class="logo"><span class="dDay">D - DAY</span></p>
+      <p class="logo"><span id="Day">D - DAY</span></p>
       <p class="info">며칠 남은 거지?</p>
-
-      <span class="dDay"></span>
     </div>
 
     <div class="inner">
       <!-- <label for="today">오늘 날짜 </label> -->
       <span id="today"></span>
       <span>부터</span>
-      <input type="date" id="datepicker2" placeholder="2022-01-01" maxlength="10">
+      <input type="date" id="datePick" placeholder="2022-01-01" maxlength="10" min="1900-01-01" max-value="">
     </div>
   </div>
 </body>

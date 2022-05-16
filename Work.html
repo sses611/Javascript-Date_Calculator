@@ -8,10 +8,11 @@
 
   <link rel="stylesheet" href="css/default.css" />
   <link rel="stylesheet" href="css/custom.css" />
+  <link rel="stylesheet" href="css/mobile.css" />
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <!--jOuery CDN 연결-->
-  <script src="./js/basic.js"></script>
+  <script src="./js/WORK.js"></script>
 
   <title>날짜 계산기 </title>
 </head>
@@ -30,20 +31,17 @@
   </div>
 
   <div class="wrap">
-    <div class="header">
-      <p class="logo"><span class="dDay">DAY</span></p>
-      <p class="info">나의 근무 기간은??</p>
 
-      <span class="dDay"></span>
+    <div class="header">
+      <p class="logo"><span id="Day">DAY</span></p>
+      <p class="info">나의 근무 기간은??</p>
     </div>
 
     <div class="inner">
       <!-- <label for="today">오늘 날짜 </label> -->
-      <input type="date" id="datepicker2" placeholder="2022-01-01" maxlength="10">
+      <input type="date" id="datePick" placeholder="2022-01-01" maxlength="10" min="1900-01-01" max="">
       <span>부터</span>
-      <!-- <input type="date" id="datepicker2" placeholder="2022-01-01" maxlength="10"> -->
       <span id="today"></span>
-      </span>
     </div>
   </div>
 </body>
