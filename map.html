@@ -1,0 +1,114 @@
+  <!DOCTYPE html>
+  <html lang="ko">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script><!--jOuery CDN 연결-->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=5ad13442c9be9ad8f43508430f5dc411&libraries=services,clusterer,drawing"></script>
+
+    <style>
+      .search-box{
+        overflow: hidden;
+        position: absolute;
+        /* left: -9999px;
+        width: 0;
+        height: 1px;
+        margin: 0;
+        padding: 0; */
+      }
+      
+      .search{
+        float: left;
+        position: relative;
+        z-index: 30;
+        width: 390px;
+        height: 116px;
+        background-color: #258fff;
+      }
+
+      .info{
+        overflow: hidden;
+        float: left;
+        position: relative;
+        z-index: 25;
+        width: 390px;
+        height : 1500px;
+        background-color: #f9f9f9;
+        clear: both;
+      }
+
+      
+    </style>
+    <title>날짜 계산기 </title>
+  </head>
+
+  <body>
+    <div class="sidenav">
+      <a href="index.html">HOME</a>
+      <a href="DDay.html">D-DAY</a>
+      <a href="work.html">WORK</a>
+    </div>
+
+    <div class="sidenav-mobile">
+      <a href="index.html">HOME</a>
+      <a href="DDay.html">D-DAY</a>
+      <a href="work.html">WORK</a>
+    </div>
+
+    <div class="header">
+      <!-- <p class="logo"><span id="Day">DAY</span></p>
+      <p class="info">나의 근무 기간은??</p> -->
+    </div>
+
+    <div class="wrap">
+      <div id ="search-box" class="search-box">
+        <div id="search" class="search">
+          <input type="text" placeholder="장소, 주소 검색"/>
+          <button type="button" id="search.keyword.submit" class="go ico_search btn_search">검색</button>
+        </div>
+        <div id="info" class="info">
+          <div id="info.header" class="header">
+            <div id="info.header.main" class="main">
+                <div role="navigation">
+                    <h2 class="screen_out">검색 메뉴</h2>
+                    <ul class="menu">
+                        <li id="search.tab1" class="keyword keyword-ACTIVE">
+                            <a href="#" class="mainmenutab" title="검색">검색</a>
+                        </li>
+                        <li id="search.tab2" class="carRoute carRoute-INACTIVE">
+                            <a href="#" class="mainmenutab" title="길찾기">길찾기</a>
+                        </li>
+                        <!-- <li id="search.tab3" class="transitRoute transitRoute-INACTIVE">
+                            <a href="#" class="mainmenutab" title="버스">버스</a>
+                        </li>
+                        <li id="search.tab4" class="subwayRoute subwayRoute-INACTIVE">
+                            <a href="#" class="mainmenutab" title="지하철">지하철</a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+      </div>
+
+      <div id="map" style="width:100%; height:1500px;"></div>
+      <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=5ad13442c9be9ad8f43508430f5dc411"></script>
+      <script>
+        var container = document.getElementById('map');
+        var options = {
+          center: new kakao.maps.LatLng(33.450701, 126.570667),
+          level: 3
+        };
+      var map = new kakao.maps.Map(container, options);
+      </script>
+    </div>
+  </body>
+
+  </html>
