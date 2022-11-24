@@ -1,33 +1,63 @@
-/* @import "reset.css"; */
+        /* @import "reset.css"; */
 
-html{
-    background-color: beige;
-}
+        html{
+            background-color: beige;
+        }
 
 
-h1{
-    font-weight: 500;
-}
+        h1{
+            font-weight: 500;
+        }
 
-.header{
-    background-color: #fff;
-    text-align: center;
-    padding : 20px;
-}
+        .header{
+            background-color: #fff;
+            text-align: center;
+            padding : 20px;
+        }
 
-.cal-body{
-    background : lightgray;
-    margin-top: 10px;
-    width : 100%;
-    height : 300px;
-}
+        .cal-body{
+            background : lightgray;
+            width: 100%;
+            height : auto;
+        }
 
-.cal-window{
-    background-color: aqua;
-    width : 80%;
-    height : 100px;
-    margin: 10%;
-    border-radius: 3px;
-    border-style: none;
-    font-size: 25px;
-}
+        .cal-window{
+            background-color: aqua;
+            width : 100%;
+            height: 200px;
+            border-radius: 3px;
+            border-style: none;
+            font-size: 25px;
+        }
+
+        .cal-num{
+            margin-top: 50px;
+            width: 100%;
+            height: 844px;
+            background-color: pink;
+        }
+        tbody{
+            margin : 100px;
+        }
+        .cal-num td {
+            width : 20%;
+            height: 20%;
+            cursor : pointer;
+            background-color: #fff;
+            text-align: center;
+            font-size: 50px;
+            font-weight: 600;
+            border-radius: 50px;
+        }  
+    /*     
+        .cal-num tr{
+            margin: 10px;
+        }
+        .cal-num tr td{
+            justify-content:space-around;
+            width: 100%;
+            font-size: 40px;
+            margin-right: 20px;
+            background-color: #fff;
+            border-radius: 50px;
+        } */
