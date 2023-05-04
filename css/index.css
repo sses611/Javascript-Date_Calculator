@@ -104,14 +104,22 @@ header ul a {
 
 
 main{
-    padding : 0 80px;
-    display: flex;
-    justify-content : center;
-    margin: 40px 0px;
+    /* display: flex;
+    justify-content : space-between; */
+    margin: 40px 80px;
+    gap : 30px;
+}
+
+main #post-items{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
 }
 
 main iframe{
-  width: 1000px;
-  height: 1000px;
-  border : 3px solid #ededed
+  width: 350px;
+  height: 350px;
+  border : 3px solid #ededed;
+  background-color: #fff;
+  border-radius: 15px;
 }
