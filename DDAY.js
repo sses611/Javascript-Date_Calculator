@@ -1,34 +1,38 @@
-window.onload = function () {
+window.onload = () => {
+  init();
+};
+
+function init() {
   const today = new Date();
   let selectedDate = document.getElementById("datePick");
 
-  let now =
-    today.getFullYear() + "-" + (today.getMonth() + 1) + "-" + today.getDate();
+  let now =  today.getFullYear() + "-" + (today.getMonth() + 1) + "-" + today.getDate();
   document.getElementById("today").innerHTML = now;
 
   selectedDate.addEventListener("change", function () {
     let setDate = new Date(selectedDate.value);
     calculateDate(today, setDate);
   });
+}
 
-  function calculateDate(today, setDate) {
-    let resultDay = setDate - today;
-    resultDay = parseInt(resultDay / 1000 / 60 / 60 / 24);
-    identity(resultDay);
-  }
+function calculateDate(today, setDate) {
+  let resultDay = setDate - today;
+  resultDay = parseInt(resultDay / 1000 / 60 / 60 / 24);
+  identity(resultDay);
+}
 
-  function identity(resultDay) {
-    let Day = document.getElementById("Day");
-    if (resultDay > 0) {
-      resultDay = resultDay + 1;
-      Day.innerHTML = "D - " + resultDay;
-    } else if (resultDay < 0) {
-      Day.innerText = "D + " + -1 * resultDay;
-    } else {
-      Day.innerText = resultDay;
-    }
+function identity(resultDay) {
+  let Day = document.getElementById("Day");
+  if (resultDay > 0) {
+    resultDay = resultDay + 1;
+    Day.innerHTML = "D - " + resultDay;
+  } else if (resultDay < 0) {
+    Day.innerText = "D + " + -1 * resultDay;
+  } else {
+    Day.innerText = resultDay;
   }
-};
+}
+
 // $(document).ready(function () {
 //   const today = new Date();
 //   let datePick = "";

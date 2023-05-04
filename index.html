@@ -1,68 +1,61 @@
-  <!DOCTYPE html>
-  <html lang="ko">
+<!DOCTYPE html>
+<html lang="ko">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="날짜계산기">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="날짜계산기">
 
-    <!-- <link rel="stylesheet" href="css/default.css" />
-    <link rel="stylesheet" href="css/custom.css" /> -->
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/index.css">
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script><!--jOuery CDN 연결-->
+  <!-- <link rel="stylesheet" href="css/default.css" />
+      <link rel="stylesheet" href="css/custom.css" /> -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/index.css">
 
-    <title>날짜 계산기 </title>
-  </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script><!--jOuery CDN 연결-->
+
+  <title>날짜 계산기 </title>
+</head>
+
+<body>
 
   <body>
-    <body>
-      <header id="menu-header">
-          <div id="logo">
-              <img src="./img/logo.png" alt="">
-              <span>Paint</span>
-          </div>
-          <div id="">Try Everything</div>
-          <div id="header-right-section">
-              <img src="./img/list.svg" alt="">
-              <img src="./img/user-circle.svg" alt="">
-          </div>
-      </header>
-
-      <main>
-        <div id="wrap">
-          
-        </div>
-      </main>
-  
-    <!-- <div class="sidenav">
-      <a href="index.html">HOME</a>
-      <a href="DDay.html">D-DAY</a>
-      <a href="work.html">WORK</a>
-      <a href="map.html">MAP</a>
-
-    </div>
-
+    <header>
+      <div id="main-menu">
+        <img id="logo" src="./img/logo.png" alt="">
     
-    <div class="sidenav-mobile">
-      <a href="index.html">HOME</a>
-      <a href="DDay.html">D-DAY</a>
-      <a href="work.html">WORK</a>
-      <a href="map.html">MAP</a>
-    </div>
-
-    <div class="wrap">
-      <div class="header">
-        <p class="logo"><span class="dDay">Hello?</span></p>
-        <p class="info">너의 삶을 도와줄 유용한 것들</p>
+        <div id="">Utility</div>
+        <div id="header-right-section">
+          <img src="./img/list.svg" alt="">
+          <img src="./img/user-circle.svg" alt="">
+        </div>
       </div>
-    </div>
 
-    <div class="ads">
-      
-    </div> -->
+      <ul id="menu-lists">
+        <li class="menu-list">
+          <a href="index.html">HOME</a>
+        </li>
+        <li class="menu-list">
+          <a href="DDay.html">D-DAY</a>
+        </li>
+        <li class="menu-list">
+          <a href="work.html">WORK</a>
+        </li>
+        <li class="menu-list">
+          <a href="map.html">MAP</a>
+        </li>
+      </ul>
+    </header>
+
+
+    <main>
+      <div id="wrap">
+        <iframe src="./DDay.html" frameborder="0"></iframe>
+        <iframe src="./work.html" frameborder="0"></iframe>
+        <!-- <iframe src="./map.html" frameborder="0"></iframe> -->
+      </div>
+    </main>
+
   </body>
 
-  </html>
+</html>
